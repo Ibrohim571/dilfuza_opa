@@ -1,0 +1,77 @@
+<!-- index.html -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onlayn Kurslar va Mobil Ilovalar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Ochiq Onlayn Kurslar va Mobil Ilovalardan Samarali Foydalanish</h1>
+        <p>Zamonaviy ta'lim imkoniyatlari</p>
+    </header>
+
+    <nav>
+        <a href="#about">Ma'lumot</a>
+        <a href="#apps">Ilovalar</a>
+        <a href="#tips">Tavsiyalar</a>
+        <a href="#contact">Aloqa</a>
+    </nav>
+
+    <section id="about">
+        <h2>Loyiha haqida</h2>
+        <p>Ushbu loyiha ochiq onlayn kurslardan foydalanishda mobil ilovalarning ahamiyatini tushuntiradi. Mobil
+            ilovalar orqali istalgan joyda va vaqtda bilim olish imkoniyati mavjud.</p>
+    </section>
+
+    <section id="apps">
+        <h2>Mashhur mobil ilovalar</h2>
+
+        <div class="card">
+            <h3>Coursera</h3>
+            <p>Dunyoning yetakchi universitetlaridan kurslar.</p>
+        </div>
+
+        <div class="card">
+            <h3>Udemy</h3>
+            <p>Har xil yo'nalishlarda amaliy kurslar.</p>
+        </div>
+
+        <div class="card">
+            <h3>Khan Academy</h3>
+            <p>Bepul va sifatli ta'lim platformasi.</p>
+        </div>
+
+    </section>
+
+    <section id="tips">
+        <h2>Samarali foydalanish tavsiyalari</h2>
+        <ul>
+            <li>Kunlik reja tuzing</li>
+            <li>Offline yuklab olish funksiyasidan foydalaning</li>
+            <li>Doimiy mashq qiling</li>
+            <li>Bildirishnomalarni yoqing</li>
+        </ul>
+
+        <button onclick="showMessage()">Motivatsiya olish</button>
+        <p id="msg"></p>
+    </section>
+
+    <section id="contact">
+        <h2>Aloqa</h2>
+        <p>Email: student@example.com</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Individual loyiha</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById('msg').innerText = "Muvaffaqiyatli o'qish uchun intizom eng muhim omil!";
+        }
+    </script>
+
+</body>
+
+</html>

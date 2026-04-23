@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <h2>Kirish</h2>
+            <input type="text" id="loginUser" placeholder="Username">
+            <input type="password" id="loginPass" placeholder="Password">
+            <button onclick="login()">Login</button>
+            <p>Akkauntingiz yo‘qmi? <a href="main.html">Ro‘yxatdan o‘tish</a></p>
+            <p id="msg"></p>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            let u = document.getElementById('loginUser').value;
+            let p = document.getElementById('loginPass').value;
+
+            let su = localStorage.getItem('user');
+            let sp = localStorage.getItem('pass');
+
+            if (u === su && p === sp) {
+                window.location.href = "main.html";
+            } else {
+                document.getElementById('msg').innerText = "❌ Noto‘g‘ri login yoki parol";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
